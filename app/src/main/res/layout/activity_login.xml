@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/background_principal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bg_principal_login"/>
+
+    <TextView
+        android:id="@+id/text_bem_vindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bem_vindo_novamente_login"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/background_principal"
+        app:layout_constraintTop_toTopOf="@id/background_principal"
+        app:layout_constraintBottom_toBottomOf="@id/background_principal"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/background_principal"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColorHint="@color/purple"
+        android:drawableStart="@drawable/ic_email"
+        android:background="@drawable/bg_edit"
+        android:padding="8dp"
+        android:drawablePadding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:textColorHint="@color/purple"
+        android:drawableStart="@drawable/ic_pass"
+        android:background="@drawable/bg_edit"
+        android:padding="8dp"
+        android:drawablePadding="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_logar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/login"
+        android:background="@drawable/bg_buttom_login_entrar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_google"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
+        app:layout_constraintEnd_toEndOf="@id/edit_email"
+        app:layout_constraintTop_toBottomOf="@id/button_logar"
+        android:layout_marginTop="24dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:text="@string/logar_com_google"
+        android:background="@drawable/bg_button_vazio"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_facebook"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
+        app:layout_constraintEnd_toEndOf="@id/edit_email"
+        app:layout_constraintTop_toBottomOf="@id/button_google"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:text="@string/logar_com_facebook"
+        android:background="@drawable/bg_button_vazio"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

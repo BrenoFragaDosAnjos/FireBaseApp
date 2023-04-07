@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FireBaseApp</string>
+    <string name="app_firebase">App Firebase</string>
+    <string name="bem_vindo_novamente">Bem vindo novamente</string>
+    <string name="tudo_que_precisa_aqui">Tudo que precisa aqui!</string>
+    <string name="login">Login</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="imagem_principal">imagem principal</string>
+    <string name="bem_vindo_novamente_login">Bem vindo novamente!</string>
+    <string name="logar_com_google">Logar com Google</string>
+    <string name="logar_com_facebook">Logar com Facebook</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="criar_uma_nova_conta">Criar uma nova conta</string>
+    <string name="cadastrar">cadastrar</string>
+    <string name="nome">Nome</string>
+    <string name="background_cadastro_titulo">background cadastro titulo</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="click_me">Click me</string>
+    <string name="defaul_web_client_id">684237888223-dggnavi9odeo39vb73lq9ea0qqajknor.apps.googleusercontent.com</string>
+
+</resources>
